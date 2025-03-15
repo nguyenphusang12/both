@@ -112,10 +112,10 @@
                     const key = `[${c.tp}-${c.sl}]`
                     if (c.type === "SELL") {
                         obj['POSITION_SELL']['SELL'][key] = value;
-                        if (SUM['POSITION_SELL'].hasOwnProperty(key)) {
-                            SUM['POSITION_SELL'][key] += value
+                        if (SUM['POSITION_SELL']['SELL'].hasOwnProperty(key)) {
+                            SUM['POSITION_SELL']['SELL'][key] += value
                         } else {
-                            SUM['POSITION_SELL'][key] = value
+                            SUM['POSITION_SELL']['SELL'][key] = value
                         }
                     }
                     if (c.type === "BUY") {
@@ -133,10 +133,10 @@
                     const key = `[${c.tp}-${c.sl}]`
                     if (c.type === "SELL") {
                         obj['POSITION_BUY']['SELL'][key] = value;
-                        if (SUM['POSITION_BUY'].hasOwnProperty(key)) {
-                            SUM['POSITION_BUY'][key] += value
+                        if (SUM['POSITION_BUY']['SELL'].hasOwnProperty(key)) {
+                            SUM['POSITION_BUY']['SELL'][key] += value
                         } else {
-                            SUM['POSITION_BUY'][key] = value
+                            SUM['POSITION_BUY']['SELL'][key] = value
                         }
                     }
                     if (c.type === "BUY") {
